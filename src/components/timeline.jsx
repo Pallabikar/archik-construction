@@ -43,28 +43,57 @@ export default function Timeline() {
       <ul className="relative mx-auto max-w-5xl space-y-10">
         {items.map((it, i) => {
           const left = i % 2 === 0
+
           return (
-            <li key={it.year} className={`relative grid items-start gap-6 md:grid-cols-2 md:gap-10 opacity-0 ${left ? 'animate-slideInLeft' : 'animate-slideInRight'}`} style={{animationDelay: `${i * 0.3}s`, animationFillMode: 'forwards'}}>
+            <li
+              key={it.year}
+              className={`relative grid items-start gap-6 md:grid-cols-2 md:gap-10 opacity-0 ${
+                left ? "animate-slideInLeft" : "animate-slideInRight"
+              }`}
+              style={{
+                animationDelay: `${i * 0.3}s`,
+                animationFillMode: "forwards",
+              }}
+            >
               {/* side A */}
               <div
-                className={`${left ? "order-1 md:order-1" : "order-1 md:order-2"} ${left ? "md:pr-10" : "md:pl-10"}`}
+                className={`${left ? "order-1 md:order-1" : "order-1 md:order-2"} ${
+                  left ? "md:pr-10" : "md:pl-10"
+                }`}
               >
                 <div className="rounded-2xl border bg-white p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center justify-between">
-                    <span className="timeline-year text-2xl font-extrabold text-amber-600">{it.year}</span>
-                    <span className="font-semibold text-slate-800">{it.title}</span>
+                    <span className="timeline-year text-2xl font-extrabold text-amber-600">
+                      {it.year}
+                    </span>
+                    <span className="font-semibold text-slate-800">
+                      {it.title}
+                    </span>
                   </div>
-                  <p className="text-slate-600 mt-3">{it.desc}</p>
+
+                  <p
+                    className="text-slate-600 mt-3"
+                    style={{ textAlign: "justify" }}
+                  >
+                    {it.desc}
+                  </p>
                 </div>
               </div>
 
               {/* milestone dot */}
-              <div className="absolute left-1/2 top-8 -translate-x-1/2" aria-hidden="true">
+              <div
+                className="absolute left-1/2 top-8 -translate-x-1/2"
+                aria-hidden="true"
+              >
                 <span className="timeline-dot block h-6 w-6 rounded-full bg-amber-500 shadow-lg animate-pulse" />
               </div>
 
               {/* spacer for opposite side */}
-              <div className={`${left ? "order-2 md:order-2" : "order-2 md:order-1"}`} />
+              <div
+                className={`${
+                  left ? "order-2 md:order-2" : "order-2 md:order-1"
+                }`}
+              />
             </li>
           )
         })}
