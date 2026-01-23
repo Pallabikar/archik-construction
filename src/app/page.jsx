@@ -5,7 +5,7 @@ import Timeline from "@/components/timeline"
 import StatsSection from "@/components/stats-section"
 import ServicesScroller from "@/components/services-scroller"
 
-import ArchikHomes from "@/components/temp"
+import ArchikHomes from "@/components/archik-homes"
 import QuickCalculator from "@/components/quick-calculator"
 import ContactSection from "@/components/contact-section"
 import { CtaBanner } from "@/components/cta-banner"
