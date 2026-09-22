@@ -218,6 +218,19 @@
 }
 
 @layer utilities {
+  /* Request Custom Quote button text color fix */
+  .request-quote-btn,
+  .request-quote-btn * {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+  }
+  .request-quote-btn:hover,
+  .request-quote-btn:focus,
+  .request-quote-btn:active {
+    color: #000000 !important;
+    background-color: #f1f5f9 !important;
+  }
+
   .marquee {
     display: inline-flex;
     min-width: 200%;

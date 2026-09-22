@@ -85,10 +85,10 @@ export default function ArchikHomesPage() {
               <Link href="/contact" className="inline-block">
                 <button
                   type="button"
-                  className="inline-flex items-center justify-center h-12 px-8 py-3 text-lg font-bold rounded border border-white transition-colors cursor-pointer shadow-md"
+                  className="request-quote-btn inline-flex items-center justify-center h-12 px-8 py-3 text-lg font-bold rounded border border-white transition-colors cursor-pointer shadow-md"
                   style={{ color: '#000000', backgroundColor: '#ffffff', opacity: 1 }}
                 >
-                  Request Custom Quote
+                  <span style={{ color: '#000000' }}>Request Custom Quote</span>
                 </button>
               </Link>
             </div>
