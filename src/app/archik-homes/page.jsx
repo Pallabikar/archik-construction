@@ -82,10 +82,14 @@ export default function ArchikHomesPage() {
                   View Our Furniture Gallery
                 </Button>
               </Link>
-              <Link href="/contact">
-                <Button size="lg" className="bg-white text-black hover:bg-slate-100 hover:text-black border border-white px-8 py-3 font-semibold">
+              <Link href="/contact" className="inline-block">
+                <button
+                  type="button"
+                  className="inline-flex items-center justify-center h-12 px-8 py-3 text-lg font-bold rounded border border-white transition-colors cursor-pointer shadow-md"
+                  style={{ color: '#000000', backgroundColor: '#ffffff', opacity: 1 }}
+                >
                   Request Custom Quote
-                </Button>
+                </button>
               </Link>
             </div>
           </div>
