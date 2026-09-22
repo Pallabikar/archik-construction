@@ -77,19 +77,23 @@ export default function ArchikHomesPage() {
               From concept to creation, we craft bespoke furniture solutions that transform spaces into extraordinary experiences. Our dedicated team specializes in custom furniture manufacturing and interior design.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3">
-                View Our Furniture Gallery
-              </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-3">
-                Request Custom Quote
-              </Button>
+              <Link href="#furniture-gallery">
+                <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3">
+                  View Our Furniture Gallery
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button size="lg" className="bg-white text-black hover:bg-slate-100 hover:text-black border border-white px-8 py-3 font-semibold">
+                  Request Custom Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Custom Furniture Types Carousel */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-amber-50">
+      <section id="furniture-gallery" className="py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-amber-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">
