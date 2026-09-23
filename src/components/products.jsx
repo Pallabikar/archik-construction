@@ -98,26 +98,6 @@ const products = [
     included: ["Free office delivery", "3-year warranty", "Cable management kit", "Professional installation"]
   },
   { 
-    id: 5, 
-    name: "Dining Chair Set", 
-    // price: "₹18,000", 
-    // originalPrice: "₹35,000",
-    image: "/wooden-dining-chair-set-modern-kitchen.jpg",
-    segment: 'residential',
-    rating: 4.5,
-    reviews: 92,
-    features: ["Set of 4", "Ergonomic Design", "Stackable"],
-    description: "Complete your dining experience with our elegant chair set. Crafted for comfort and style, perfect for family gatherings and dinner parties.",
-    specifications: {
-      "Dimensions": "45cm x 50cm x 80cm (each)",
-      "Material": "Solid Beech Wood",
-      "Color": "Natural, White, Black",
-      "Quantity": "Set of 4 chairs",
-      "Features": "Stackable, lightweight design"
-    },
-    included: ["Set of 4 chairs", "2-year warranty", "Assembly instructions", "Delivery included"]
-  },
-  { 
     id: 6, 
     name: "Bedside Table", 
     // price: "₹8,500", 

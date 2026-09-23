@@ -21,11 +21,6 @@ export default function ArchikHomesPage() {
       image: "/design-mode/Designer-Bedroom-Furniture-UH-ROYAL-0016.jpg"
     },
     {
-      category: "Kitchen & Dining",
-      items: ["Modular Kitchens", "Dining Tables", "Crockery Units"],
-      image: "/wooden-dining-chair-set-modern-kitchen.jpg"
-    },
-    {
       category: "Office Furniture",
       items: ["Desks", "Storage Units", "Meeting Tables", "Workstations"],
       image: "/modern-sideboard-console-oak-finish.jpg"
