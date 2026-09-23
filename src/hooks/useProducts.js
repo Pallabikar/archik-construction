@@ -35,14 +35,15 @@ export function useProducts(options = {}) {
       if (page) searchParams.append('page', page);
       if (limit) searchParams.append('limit', limit);
 
-      const response = await fetch(`/api/products?${searchParams}`);
+      const apiBase = process.env.NEXT_PUBLIC_API_URL || '';
+      const response = await fetch(`${apiBase}/api/products?${searchParams}`);
       
       if (!response.ok) {
         throw new Error('Failed to fetch products');
       }
 
       const data = await response.json();
-      setProducts(data.products || []);
+      setProducts(Array.isArray(data) ? data : data.products || []);
       setPagination(data.pagination || null);
     } catch (err) {
       setError(err.message);
@@ -76,7 +77,8 @@ export function useProduct(id) {
       setLoading(true);
       setError(null);
 
-      const response = await fetch(`/api/products/${id}`);
+      const apiBase = process.env.NEXT_PUBLIC_API_URL || '';
+      const response = await fetch(`${apiBase}/api/products/${id}`);
       
       if (!response.ok) {
         throw new Error('Failed to fetch product');
